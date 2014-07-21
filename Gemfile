@@ -6,9 +6,11 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-gem 'sqlite3'
 
+# Use postgresql as the database for Active Record
+gem 'pg'
 
+# gem 'sqlite3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
