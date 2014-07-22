@@ -3,6 +3,53 @@ Rails.application.routes.draw do
   get '/', to: redirect('/')
   # get '/api', to: redirect('/')
 
+
+
+# API routing stuff
+# get 'app' => 'apps#show'
+  namespace :api do
+    namespace :v1 do
+      resources :bookings
+      resources :customers
+      resources :listings
+      resources :timeslots
+      resources :users
+      resources :customers
+      # do
+      #   member do
+      #     get 'utilization'
+      #     get 'users'
+      #   end
+      # end
+      resources :session do
+        collection do
+          post 'new'
+        end
+      end
+      get '/me' => "session#index"
+    end
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
