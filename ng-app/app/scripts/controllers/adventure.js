@@ -2,18 +2,16 @@
 
 /**
  * @ngdoc function
- * @name outdoolaApp.controller:MainCtrl
+ * @name outdoolaApp.controller:AdventureCtrl
  * @description
- * # MainCtrl
+ * # AdventureCtrl
  * Controller of the outdoolaApp
  */
 angular.module('outdoolaApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('AdventureCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
-    $scope.insults = ["LAME", "dumb", "poopy", "penis"];
   });
